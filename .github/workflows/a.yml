@@ -9,7 +9,7 @@ jobs:
       steps:
       - uses: actions/checkout@v2 # Pull code tu repo ve may ao
       - run: mkdir -p ~/.ssh
-      - run: echo "${{secrets.PRIVATE_KEY}}" > ~/.ssh/private_key
+      - run: echo "${{secrets.SSH_PRIVATE_KEY}}" > ~/.ssh/private_key
       - run: chmod 600 ~/.ssh/private_key
       - run: npm install
       - run: npm run build
