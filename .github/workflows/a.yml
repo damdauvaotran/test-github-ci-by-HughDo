@@ -1,21 +1,17 @@
-name: Hello
+name: TestDeployReactApp
 on:
   push:
     branches:
       - master
 jobs:
   build:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Nodejs
+      - uses: actions/checkout@v2 # Pull code tu repo ve may ao
+      - name: Use Node.js # Cai node
         uses: actions/setup-node@v1
         with:
           node-version: '12.x'
       - run: ls -la
       - run: npm install
       - run: npm run build
-
-
-  deploy:
-
