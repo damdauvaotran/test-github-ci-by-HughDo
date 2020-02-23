@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Tiên tri vũ trụ Trần Dần ở Fountion Valley
+          Tiên tri vũ trụ Trần Dần ở Ftion Valley
           asgdfhjasdgf
         </a>
       </header>
