@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Tiên tri vũ trụ Trần Dần ở Foundtion Valley
+          Tiên tri vũ trụ  ở Foundtion Valley
           asgdfhjasdgfhsghhjasjdhf
           develop
           nguyenng
