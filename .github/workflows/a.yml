@@ -15,7 +15,7 @@ jobs:
       - run: npm run build
       - run: ls -la
       - name: Send file to server
-        run: rsync -azhv -e 'ssh -i ~/.ssh/private_key -o StrictHostKeyChecking=no' build/*  --rsync-path=' mkdir -p $target ; sudo rsync' $user@$host:$target
+        run: rsync -azhv -e 'ssh -i ~/.ssh/private_key -o StrictHostKeyChecking=no' build/*  --rsync-path=' mkdir -p $target && sudo rsync' $user@$host:$target
         env:
           user: root
           host: 172.104.182.140
