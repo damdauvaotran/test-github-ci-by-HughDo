@@ -28,13 +28,17 @@ class TodoList extends React.Component {
   }
 
   render() {
+    const list  = []
+    for (const todo of this.state.todoList){
+      list.push(this.renderTodoItem(todo))
+    }
     return (
       <div>
         <div>
           <button onClick={this.addTodo} >Add todo</button>
         </div>
         {
-          this.state.todoList.map(this.renderTodoItem)
+          list
         }
       </div>
     )
