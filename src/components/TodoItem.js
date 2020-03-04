@@ -6,12 +6,12 @@ class TodoItem extends React.Component {
     return (
       <div>
         {todo.content}
-        <span>
+        <span style={{color: 'red'}}>
           {
-            todo.isDone ? 'x' : null
-          }
+          todo.isDone ? 'x' : null
+        }
         </span>
-      </div>
+      </div >
     )
   }
 }

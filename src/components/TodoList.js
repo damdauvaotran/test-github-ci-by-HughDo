@@ -16,7 +16,7 @@ class TodoList extends React.Component {
     const temp = this.state.todoList;
     temp.push({
       content: 'Something',
-      isDone: false
+      isDone: true
     })
     this.setState({
       todoList: temp
